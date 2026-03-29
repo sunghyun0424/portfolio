@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "description": "정적 포트폴리오 (Vercel 배포)",
+  "scripts": {
+    "deploy": "vercel --prod",
+    "preview": "vercel"
+  },
+  "devDependencies": {
+    "vercel": "^41.4.1"
+  }
+}
