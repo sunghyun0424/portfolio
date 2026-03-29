@@ -70,22 +70,44 @@
 
       <aside class="finder__sidebar" aria-label="사이드바">
         <nav class="finder__side-scroll">
+          <p class="finder__side-heading">방문자용</p>
           <ul class="finder__side-list">
-            <li><span class="finder__row"><span class="finder__ico finder__ico--clock" aria-hidden="true"></span>최근 항목</span></li>
-            <li><span class="finder__row"><span class="finder__ico finder__ico--share" aria-hidden="true"></span>공유</span></li>
-            <li><span class="finder__row"><span class="finder__ico finder__ico--trash" aria-hidden="true"></span>삭제</span></li>
+            <li>
+              <a class="finder__row" href="../index.html" aria-label="포트폴리오 메인 페이지로 이동">
+                <span class="finder__ico finder__ico--desk" aria-hidden="true"></span>
+                Main Page
+              </a>
+            </li>
+            <li>
+              <button type="button" class="finder__row finder__row--contacts" data-copy-clipboard="chltjdgus424@gmail.com" data-copy-toast="메일 주소가 복사되었어요!" aria-label="chltjdgus424@gmail.com 복사">
+                <span class="finder__ico finder__ico--mail" aria-hidden="true"></span>
+                <span class="finder__row-col">
+                  <span class="finder__row-kicker">e-mail</span>
+                  <span class="finder__row-value">chltjdgus424@gmail.com</span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="finder__row finder__row--contacts" data-copy-clipboard="010-2050-0424" data-copy-toast="전화번호가 복사되었어요!" aria-label="010-2050-0424 복사">
+                <span class="finder__ico finder__ico--phone" aria-hidden="true"></span>
+                <span class="finder__row-col">
+                  <span class="finder__row-kicker">Phone</span>
+                  <span class="finder__row-value">010-2050-0424</span>
+                </span>
+              </button>
+            </li>
           </ul>
           <p class="finder__side-heading">회사</p>
           <ul class="finder__side-list">
             <li>
               <span class="finder__row finder__row--selected">
-                <img class="finder__ico-img" src="../assets/macos-folder-original.svg" width="16" height="16" alt="" decoding="async" />
+                <img class="finder__ico-img finder__ico-img--brand" src="../assets/Fapis.svg" width="16" height="16" alt="" decoding="async" />
                 Fapis
               </span>
             </li>
             <li>
               <a class="finder__row" href="miso.html" aria-label="MISO 미소로 이동">
-                <img class="finder__ico-img" src="../assets/macos-folder-original.svg" width="16" height="16" alt="" decoding="async" />
+                <img class="finder__ico-img finder__ico-img--brand" src="../assets/MISO.svg" width="16" height="16" alt="" decoding="async" />
                 MISO
               </a>
             </li>
@@ -117,5 +139,7 @@
       </div>
     </div>
   </main>
+  <div class="finder__toast" id="portfolio-toast" role="status" aria-live="polite"></div>
+  <script src="../js/finder-sidebar.js"></script>
 </body>
 </html>

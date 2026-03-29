@@ -57,8 +57,27 @@
     </div>
 
     <footer class="landing-foot">
-      <a class="landing-mail" href="mailto:you@example.com">you@example.com</a>
+      <button
+        type="button"
+        class="landing-mail"
+        data-copy-clipboard="chltjdgus424@gmail.com"
+        data-copy-toast="메일 주소가 복사되었어요!"
+        aria-label="이메일 주소 복사"
+      >
+        chltjdgus424@gmail.com
+      </button>
+      <button
+        type="button"
+        class="landing-tel"
+        data-copy-clipboard="010-2050-0424"
+        data-copy-toast="전화번호가 복사되었어요!"
+        aria-label="전화번호 복사"
+      >
+        010-2050-0424
+      </button>
     </footer>
   </main>
+  <div class="finder__toast" id="portfolio-toast" role="status" aria-live="polite"></div>
+  <script src="js/finder-sidebar.js"></script>
 </body>
 </html>
