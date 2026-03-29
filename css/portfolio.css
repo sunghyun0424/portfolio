@@ -872,6 +872,11 @@ body.landing-page {
   isolation: isolate;
 }
 
+/* 사이드바 등에서 index.html#miso 로 올 때 스크롤 위치 보정 */
+#miso {
+  scroll-margin-top: 2rem;
+}
+
 .landing-dock:has(.dock-folder:hover) .dock-folder:not(:hover),
 .landing-dock:has(.dock-folder:focus-visible) .dock-folder:not(:focus-visible) {
   filter: blur(6px) saturate(0.92);
@@ -1430,6 +1435,11 @@ a.finder__row:focus-visible {
 .finder__item:focus-visible {
   outline: 2px solid #007aff;
   outline-offset: 1px;
+}
+
+/* 상세 페이지 없음: 폴더만 표시 (링크 아님) */
+.finder__item--folder-only {
+  cursor: default;
 }
 
 .finder__folder-ic {
