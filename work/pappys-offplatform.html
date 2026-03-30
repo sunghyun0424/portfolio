@@ -239,39 +239,41 @@
           <section class="notes-case__panel" id="panel-result" role="region" aria-labelledby="tab-result">
             <h2 class="notes-case__title">결과</h2>
             <div class="notes-case__body">
-              <div class="notes-case__stats" aria-label="핵심 지표">
-                <article class="notes-case__stat notes-case__stat--volume">
-                  <p class="notes-case__stat-compare-simple" aria-label="기존 2건, 이후 42건">
-                    기존 <span class="notes-case__stat-compare-box">2</span>건 &gt; 이후 <span class="notes-case__stat-compare-box">42</span>건
-                  </p>
-                  <p class="notes-case__stat-label">사거래 <strong>확인·관리</strong> 건수(월 평균). 대응 체계가 <strong>눈에 보이기</strong> 시작한 구간입니다.</p>
-                </article>
-                <article class="notes-case__stat notes-case__stat--revenue">
-                  <p class="notes-case__stat-kicker">매출 기여 <span class="notes-case__stat-tag">추정</span></p>
-                  <p class="notes-case__stat-meta">당시 객단가·결제 전환율 기준</p>
-                  <p class="notes-case__stat-value notes-case__stat-value--money" aria-label="약 630만 원">
-                    <span class="notes-case__stat-won-prefix">약</span>
-                    <span class="notes-case__stat-won-num">630</span>
-                    <span class="notes-case__stat-won-suffix">만 원</span>
-                  </p>
-                  <p class="notes-case__stat-label">월 <strong>매출 기여</strong> 추정(당시 <strong>객단가</strong>·<strong>결제 전환율</strong> 기준). 플랫폼 내 <strong>정상 거래 유지</strong>와 연계된 효과로 봤습니다.</p>
-                </article>
+              <div class="notes-case__step">
+                <div class="notes-case__kpi-row" role="group" aria-label="핵심 지표">
+                  <img
+                    class="notes-case__kpi-img"
+                    src="../assets/pappys-kpi-0.svg"
+                    width="317"
+                    height="317"
+                    alt="Impact 01: 월 사거래 확인 및 관리 건수, 기존 2건에서 42건으로 증가"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <img
+                    class="notes-case__kpi-img"
+                    src="../assets/pappys-kpi-1.svg"
+                    width="317"
+                    height="317"
+                    alt="Impact 02: 월 매출 기여, 당시 CVR 및 객단가 기준"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
               </div>
-              <div class="notes-case__cols">
-                <div class="notes-case__col-block">
-                  <h3>고객 관점</h3>
-                  <ul>
-                    <li><strong>결제·분쟁 대응</strong> 등 보호 체계 안에서 거래하도록 유도해 <strong>신뢰</strong>에 기여했습니다.</li>
-                    <li>전화·채팅 상담은 유지하고, <strong>고위험 구간</strong>에서만 유의 안내가 들어가 <strong>균형 있는</strong> 경험을 지향했습니다.</li>
-                  </ul>
-                </div>
-                <div class="notes-case__col-block">
-                  <h3>사업 관점</h3>
-                  <ul>
-                    <li>관리 건수 증가는 <strong>모니터링·운영</strong>이 실제로 돌아가고 있음을 보여 줍니다.</li>
-                    <li>매출 수치는 <strong>산출 전제</strong>가 분명할 때만 의미가 있으므로, 당시 지표를 근거로 <strong>보수적으로</strong> 해석했습니다.</li>
-                  </ul>
-                </div>
+              <div class="notes-case__step">
+                <h3>고객 관점</h3>
+                <ul>
+                  <li>플랫폼 내에서 거래가 이루어지도록 유도해, 고객이 보다 안전하게 서비스를 이용할 수 있는 환경을 만들었습니다.</li>
+                  <li>전화·채팅 상담에 따른 경험은 유지하며, 사거래 가능성이 높은 시점에만 안내를 제공해 전반적인 서비스 신뢰를 높였습니다.</li>
+                </ul>
+              </div>
+              <div class="notes-case__step">
+                <h3>사업 관점</h3>
+                <ul>
+                  <li>기존에 파악이 어려웠던 사거래를 식별하고 관리할 수 있는 구조로 개선했습니다.</li>
+                  <li>사거래를 플랫폼 내 결제로 전환함으로써 월 평균 약 630만원의 매출 기여를 확인했습니다.</li>
+                </ul>
               </div>
             </div>
           </section>
@@ -279,15 +281,12 @@
           <section class="notes-case__panel" id="panel-consider" role="region" aria-labelledby="tab-consider">
             <h2 class="notes-case__title">고려 사항</h2>
             <div class="notes-case__body">
-              <p class="notes-case__callout notes-case__callout--thesis">핵심 선택은 <strong>전면 차단</strong>이 아니라 <strong>관리</strong>였습니다. 고관여 수선에서 <strong>전화·채팅 조율</strong>은 필수에 가깝고, 여기까지 막아 버리면 <strong>정상 사용자</strong>에게 불신이 갈 수 있다고 봤습니다.</p>
-              <h3>왜 ‘막기’보다 ‘관리’인가</h3>
-              <p>어뷰징·사거래는 플랫폼에선 <strong>완전히 사라지기 어려운 축</strong>입니다. 처음엔 ‘차단’이 직관적이지만, 그대로 옮기면 <strong>통화·채팅 제한</strong>과 <strong>과도한 의심</strong>으로 흐르기 쉽습니다.</p>
-              <p>수선은 견적·범위가 계속 바뀌는 <strong>고관여 서비스</strong>라, 전화로 디테일을 맞추는 건 <strong>자연스러운 단계</strong>입니다. 사거래 방지를 이유로 이 흐름까지 끊으면 <strong>다수 사용자의 불편·불신</strong>으로 이어질 수 있다고 판단했습니다.</p>
-              <h3>어디에 개입했는가</h3>
-              <p><strong>전화번호·계좌 정보가 오가는 시점</strong>에 집중했습니다. 이 구간에서 채팅에 <strong>사거래 유의 안내</strong>를 넣어, 고객은 정책과의 거리를 스스로 점검하고 파트너는 ‘이 상담은 관리 대상’임을 인지하도록 했습니다. <strong>필요한 순간에만</strong> 개입해 UX와 통제의 균형을 맞추려는 의도입니다.</p>
-              <h3>정책·운영·지속 가능성</h3>
-              <p>운영에선 이런 접점을 <strong>빠르게 탐지</strong>할 수 있게 했고, 정책에선 <strong>금지 행위·불이익</strong>을 명확히 적어 예방과 신뢰를 같이 잡으려 했습니다. 예전에 없던 <strong>사거래 조항</strong>을 두어 CS·운영의 <strong>근거와 일관성</strong>을 보강했습니다.</p>
-              <p>동시에 <strong>투입 대비 효과</strong>를 기준에 넣었습니다. 완벽한 차단보다, <strong>과도한 비용 없이</strong> 이탈을 줄이는 구조가 장기적으로 낫다고 봤고, 그래서 <strong>일부 리스크를 감수하더라도</strong> 전체 경험을 해치지 않는 선에서 <strong>관리 중심</strong>으로 방향을 잡았습니다.</p>
+              <h3><strong>‘차단’이 아닌 ‘관리’ 중심의 리스크 헷지 전략</strong></h3>
+              <p>플랫폼의 특성상 어뷰징과 사거래는 필연적으로 발생할 수밖에 없는 과제입니다. 프로젝트 초기에는 직관적인 ‘차단’ 중심의 접근을 고려했으나, 이를 실제 설계에 적용할 경우 모든 사용자 간의 접촉을 의심하고 제한하게 되어 서비스 본연의 가치를 훼손할 위험이 있었습니다.</p>
+              <p>특히 수선 서비스처럼 견적과 작업 범위가 유동적인 고관여 서비스에서는 전화 상담을 통한 세부 조율이 필수적이며 자연스러운 과정입니다. 이러한 맥락에서 사거래 방지를 목적으로 정상적인 상담 경험까지 일률적으로 제한하는 것은, 대다수 선량한 사용자에게 불편을 초래하고 플랫폼에 대한 신뢰를 떨어뜨리는 결과를 낳을 수 있다고 판단했습니다.</p>
+              <p>따라서 본 프로젝트에서는 모든 접촉을 차단하기보다, 정상적인 사용자 경험은 보존하되 리스크 발생 지점을 선별적으로 관리하는 방향을 설정했습니다. 구체적으로는 사거래 전환 확률이 급격히 높아지는 ‘전화번호 또는 계좌 정보가 공유되는 시점’에 집중했습니다. 해당 구간에서 사거래 유의 안내를 실시간으로 노출함으로써 고객에게는 플랫폼 정책 준수를 인지시키고, 파트너에게는 해당 상담이 시스템에 의해 관리되고 있다는 넛지(Nudge)를 제공하여 자발적인 행동 변화를 유도했습니다.</p>
+              <p>운영 측면에서는 이러한 이상 징후를 신속히 탐지할 수 있는 체계를 구축하는 동시에, 정책적으로는 금지 행위와 위반 시 페널티를 명확히 정의하여 운영의 근거와 일관성을 보완했습니다. 이는 막연한 제한이 아닌 명확한 기준에 근거한 예방 조치를 통해 플랫폼 내 신뢰를 공고히 하기 위함입니다.</p>
+              <p>결론적으로, 완전한 차단이라는 불가능한 목표에 과도한 비용을 투입하기보다는 사용자 경험과 통제 사이의 균형을 맞추는 데 초점을 맞췄습니다. 일부 리스크를 감수하더라도 서비스의 전체적인 활성도를 저해하지 않으면서 사거래 이탈을 유의미하게 줄일 수 있는 구조가 플랫폼의 성장에 보다 지속 가능하고 효율적인 전략이라고 판단했기 때문입니다.</p>
             </div>
           </section>
         </div>
