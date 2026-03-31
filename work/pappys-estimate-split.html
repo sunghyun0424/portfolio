@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="명품 수선 플랫폼 패피스 — 사거래 방지 기획 사례" />
-  <title>사거래 방지 기획</title>
+  <meta name="description" content="명품 수선 플랫폼 패피스 — 견적가 분리 기획 사례" />
+  <title>견적가 분리 기획</title>
   <link rel="stylesheet" href="../css/portfolio.css" />
 </head>
 <body class="notes-case-page">
-  <h1 class="visually-hidden">사거래 방지 기획</h1>
+  <h1 class="visually-hidden">견적가 분리 기획</h1>
 
   <div class="notes-case">
-    <div class="notes-case__window" role="application" aria-label="사거래 방지 기획 문서">
+    <div class="notes-case__window" role="application" aria-label="견적가 분리 기획 문서">
       <!-- macOS Notes: 왼쪽 사이드바 -->
       <aside class="notes-case__sidebar" aria-label="폴더">
         <div class="notes-case__chrome">
@@ -24,16 +24,16 @@
             <p class="notes-case__section-label">Fapis</p>
             <ul class="notes-case__folder-list">
               <li>
-                <span class="notes-case__folder notes-case__folder--active" aria-current="page">
+                <a class="notes-case__folder" href="pappys-offplatform.html" aria-label="사거래 방지 기획">
                   <svg class="notes-case__folder-ic" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h5l1.5 2H14v8H2V4z" stroke="currentColor" stroke-width="1.2"/><path d="M2 4h5l1.5 2H2V4z" fill="currentColor" opacity="0.2"/></svg>
                   사거래 방지 기획
-                </span>
+                </a>
               </li>
               <li>
-                <a class="notes-case__folder" href="pappys-estimate-split.html" aria-label="견적가 분리 기획">
+                <span class="notes-case__folder notes-case__folder--active" aria-current="page">
                   <svg class="notes-case__folder-ic" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h5l1.5 2H14v8H2V4z" stroke="currentColor" stroke-width="1.2"/><path d="M2 4h5l1.5 2H2V4z" fill="currentColor" opacity="0.2"/></svg>
                   견적가 분리 기획
-                </a>
+                </span>
               </li>
               <li>
                 <span class="notes-case__folder notes-case__folder--pending" title="상세 페이지 준비 중" aria-label="견적 필터링 기획, 상세 준비 중">
@@ -137,178 +137,113 @@
       <main class="notes-case__reader">
         <div class="notes-case__reader-chrome" aria-hidden="true"></div>
         <div class="notes-case__reader-scroll">
-          <section class="notes-case__panel" id="panel-background" role="region" aria-labelledby="tab-background">
+                    <section class="notes-case__panel" id="panel-background" role="region" aria-labelledby="tab-background">
             <p class="notes-case__meta">
               <span class="notes-case__pill">명품 수선 플랫폼 패피스</span>
               <span class="notes-case__meta-sep">·</span>
               <span>서비스 운영/기획</span>
             </p>
-            <h2 class="notes-case__title">사거래 방지 기획</h2>
+            <h2 class="notes-case__title">견적가 분리 기획</h2>
             <h3 class="notes-case__subtitle">배경</h3>
             <div class="notes-case__body">
-              <p>패피스는 고객이 견적을 요청하면 파트너사가 이에 응찰하고, 앱 내 채팅을 통해 세부 상담을 이어가는 구조로 운영됩니다. 수선 서비스는 품목마다 작업 범위와 최종 비용이 달라지는 특성이 있어, 정교한 작업을 위해 유선으로 상세 내용을 조율하는 과정은 고객 경험 측면에서 필수적이고 자연스러운 단계로 자리 잡고 있습니다.</p>
-              <p>하지만 이러한 상담 과정의 자율성을 악용하여, 일부 파트너사가 고객에게 플랫폼 결제가 아닌 개인 계좌 입금을 유도하는 사례가 발생하고 있습니다. 이는 플랫폼의 공식 결제 절차를 거치지 않고 외부에서 거래가 이루어지는 사거래 현상으로 이어지고 있습니다.</p>
-              <p>결과적으로 이러한 행위는 플랫폼의 수익성을 저해할 뿐만 아니라, 서비스가 보장하는 거래의 안전성을 위협하는 주요 리스크 요인이 되고 있습니다. 특히 플랫폼 외부 거래 시 발생할 수 있는 분쟁이나 피해로부터 고객을 보호하기 어렵다는 점에서 대책 마련이 필요한 상황입니다.</p>
+              <p>패피스는 고객의 수선 요청에 대해 파트너사가 응찰하고, 고객은 제안받은 견적들 중 최적의 업체를 선택해 결제하는 구조로 운영됩니다. 명품 수선은 기성품과 달리 파트너사의 기술력과 인프라에 따라 작업 방식(공법)과 범위가 극명하게 갈리는 고관여 서비스입니다.</p>
+              <p>예를 들어 '가방 고리 파손'이라는 동일한 문제라도 업체에 따라 기존 부속을 정교하게 복원하거나, 가죽을 새로 수급해 재제작하며, 혹은 유사 부품으로 단순 교체를 진행하기도 합니다. 이처럼 공법에 따라 작업 난이도와 유무형의 가치가 크게 상이함에도 불구하고, 기존 시스템은 '총액' 중심의 단편적인 견적 정보만을 제공해 왔습니다.</p>
+              <p>결과적으로 고객은 업체별 가격 차이에 대한 합리적인 근거를 확인하기 어려웠으며, 이는 고단가 결제에 대한 심리적 저항(결제 이탈)은 물론, 작업 방식 오인으로 인한 수령 후 클레임의 근본적인 원인이 되었습니다.</p>
             </div>
           </section>
 
-          <section class="notes-case__panel" id="panel-problem" role="region" aria-labelledby="tab-problem">
+                    <section class="notes-case__panel" id="panel-problem" role="region" aria-labelledby="tab-problem">
             <h2 class="notes-case__title">문제</h2>
             <div class="notes-case__body">
               <ul class="notes-case__stack-list notes-case__stack-list--problem">
                 <li>
-                  <span class="notes-case__list-kicker">1. 관리 사각지대</span>
-                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 상담 과정에서 발생하는 외부 거래 비중을 파악할 데이터가 없음.</p>
-                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 정확한 사거래 규모 확인 및 데이터 기반의 대응 전략 수립 불가.</p>
+                  <span class="notes-case__list-kicker">1. 가격 불신으로 인한 결제 이탈</span>
+                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 미결제 고객 설문 결과, <strong>63.8%</strong>가 업체별 가격 차이와 비용 부담을 사유로 결제를 포기함.</p>
+                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 가격 결정 근거 부족으로 고단가 견적에 대한 고객의 심리적 저항선 극대화.</p>
                 </li>
                 <li>
-                  <span class="notes-case__list-kicker">2. 고객 보호 한계</span>
-                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 플랫폼 결제가 아닌 개인 계좌 입금 시 분쟁 발생에 개입하기 어려움.</p>
-                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 피해 발생 시 플랫폼의 중재를 받을 수 없어 서비스 신뢰도 하락.</p>
+                  <span class="notes-case__list-kicker">2. 작업 범위 및 공법의 불투명성</span>
+                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 재제작(고단가)과 단순 교체(저단가)의 공법 차이가 견적서에 드러나지 않음.</p>
+                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 고객은 '동일한 수선'으로 오인하여 저가 업체만 선호하거나, 고단가 업체를 기피함.</p>
                 </li>
                 <li>
-                  <span class="notes-case__list-kicker">3. 수익성 저해</span>
-                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 플랫폼을 통해 상담하고 결제는 외부에서 진행하는 ‘이탈 현상’ 발생.</p>
-                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 정당한 수수료 수취가 누락되어 비즈니스 성장에 악영향.</p>
-                </li>
-                <li>
-                  <span class="notes-case__list-kicker">4. 운영 근거 부재</span>
-                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 사거래 부정 행위에 대한 명확한 제재 규정과 대응 매뉴얼이 부족함.</p>
-                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 사거래가 확인되어도 페널티 부여 등 운영 처리에 일관성 부족.</p>
+                  <span class="notes-case__list-kicker">3. 결과물에 대한 막연한 불안감</span>
+                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 내 제품이 어떤 과정을 거쳐 어떤 모습으로 변할지 시각적으로 인지하기 어려움.</p>
+                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 수선 완료 후 "기대했던 퀄리티가 아니다"라는 식의 CS 발생 및 서비스 신뢰 하락</p>
                 </li>
               </ul>
             </div>
           </section>
 
-          <section class="notes-case__panel" id="panel-goal" role="region" aria-labelledby="tab-goal">
+                    <section class="notes-case__panel" id="panel-goal" role="region" aria-labelledby="tab-goal">
             <h2 class="notes-case__title">목표</h2>
             <div class="notes-case__body">
               <ul class="notes-case__stack-list">
                 <li>
-                  <span class="notes-case__list-kicker">1. 선제적 탐지</span>
-                  사거래 징후(연락처·계좌 공유 등)를 실시간으로 포착하여 관리 가능한 데이터 영역으로 편입합니다.
+                  <span class="notes-case__list-kicker">1. 결제 전환율(CVR) 개선</span>
+                  가격 편차가 커 이탈률이 높았던 고관여 수선군(가죽 복원, 염색 등)의 결제 전환율 5% 개선을 목표로 합니다.
                 </li>
                 <li>
-                  <span class="notes-case__list-kicker">2. 사용자 경험 보존</span>
-                  일률적인 차단 대신 리스크 구간만 선별 관리하여, 서비스 본연의 상담 흐름과 편의성을 유지합니다.
+                  <span class="notes-case__list-kicker">2. 견적 신뢰도 및 수용률 강화</span>
+                  최고가 견적 선택 비중을 기존 12%에서 20%로 확대하는 것을 목표로 합니다.
                 </li>
                 <li>
-                  <span class="notes-case__list-kicker">3. 운영 체계 확립</span>
-                  금지 행위 및 페널티 정책을 명문화하여, 일관성 있고 객관적인 운영 근거를 확보합니다.
-                </li>
-                <li>
-                  <span class="notes-case__list-kicker">4. 지속 가능한 효율</span>
-                  과도한 시스템 비용 투입 없이, 사용자 넛지를 통해 자발적인 결제 이탈 방지 구조를 설계합니다.
+                  <span class="notes-case__list-kicker">3. 운영 효율 및 클레임 발생률 최소화</span>
+                  수선 방식 오인으로 인한 퀄리티 관련 CS 발생률 감소를 목표로 합니다.
                 </li>
               </ul>
             </div>
           </section>
 
-          <section class="notes-case__panel" id="panel-action" role="region" aria-labelledby="tab-action">
+                    <section class="notes-case__panel" id="panel-action" role="region" aria-labelledby="tab-action">
             <h2 class="notes-case__title">실행</h2>
             <div class="notes-case__body">
               <div class="notes-case__step">
-                <h3><strong>1. 리스크 선행 지표 정의</strong></h3>
-                <p>사거래 전환 확률이 가장 높은 핵심 트리거를 <strong>‘선행 단서’</strong>로 규정하여 탐지 효율을 높였습니다.</p>
+                <h3><strong>1. 비주얼 견적 가이드 및 상세 구조화</strong></h3>
                 <ul>
-                  <li>전화번호 공유: 유선 상담 전환을 통한 외부 결제 유도 징후</li>
-                  <li>계좌번호 공유: 직접 송금 방식의 비공식 거래 징후</li>
+                  <li>드로잉 기능 도입: 파트너가 고객 사진 위에 직접 수선 부위를 표시(드로잉)하여 작업 범위를 시각화.</li>
+                  <li>항목별 단가제: 수선 부위를 선택하고, 각 항목별 공법(재제작, 복원 등)과 단가를 입력하는 구조로 개편.</li>
                 </ul>
               </div>
               <div class="notes-case__step">
-                <h3><strong>2. 통합 관리 정책 수립</strong></h3>
-                <p>탐지부터 제재까지 일관된 대응이 가능하도록 운영 기준을 명문화했습니다.</p>
+                <h3><strong>2. 신뢰 기반의 레퍼런스 공유 시스템</strong></h3>
                 <ul>
-                  <li>정책 신설: 사거래 정의, 금지 행위 유형, 위반 단계별 페널티 조항 마련</li>
-                  <li>기준 일원화: 탐지-분류-안내 프로세스를 통합하여 운영 효율 극대화</li>
-                </ul>
-              </div>
-              <div class="notes-case__step">
-                <h3><strong>3. 이상 징후 탐지 및 대응 자동화</strong></h3>
-                <p>실시간 모니터링 시스템을 구축하여 관리 공수를 최소화했습니다.</p>
-                <ul>
-                  <li>자동 알림: 정보 공유 발생 시 내부 채널(Slack) 즉시 전송</li>
-                  <li>자동 분류: 해당 건을 ‘사거래 관리 대상’으로 즉시 지정 및 주문 상태 트래킹</li>
-                </ul>
-              </div>
-              <div class="notes-case__step">
-                <h3><strong>4. 사용자 넛지(Nudge) 및 인지 유도</strong></h3>
-                <p>강제적인 차단 대신 심리적 장벽을 높여 자발적 준수를 유도했습니다.</p>
-                <ul>
-                  <li>실시간 안내: 정보 공유 채팅 스레드 내 ‘사거래 방지 주의’ 메시지 즉시 노출</li>
-                  <li>가치 전달: 플랫폼 내 결제가 제공하는 안전장치(보호 체계)를 강조하여 신뢰 중심의 결제 유도</li>
+                  <li>파트너 포트폴리오 첨부: 파트너가 플랫폼에서 작업했던 유사 견적의 전후 사진을 첨부하여 기술력 증명.</li>
                 </ul>
               </div>
             </div>
           </section>
 
-          <section class="notes-case__panel" id="panel-result" role="region" aria-labelledby="tab-result">
+                    <section class="notes-case__panel" id="panel-result" role="region" aria-labelledby="tab-result">
             <h2 class="notes-case__title">결과</h2>
             <div class="notes-case__body">
               <div class="notes-case__step">
-                <div class="notes-case__kpi-row" role="group" aria-label="핵심 지표">
-                  <img
-                    class="notes-case__kpi-img"
-                    src="../assets/pappys-kpi-0.svg"
-                    width="317"
-                    height="317"
-                    alt="Impact 01: 월 사거래 확인 및 관리 건수, 기존 2건에서 42건으로 증가"
-                    decoding="async"
-                    loading="lazy"
-                  />
-                  <img
-                    class="notes-case__kpi-img"
-                    src="../assets/pappys-kpi-1.svg"
-                    width="317"
-                    height="317"
-                    alt="Impact 02: 월 매출 기여, 당시 CVR 및 객단가 기준"
-                    decoding="async"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-
-              <div class="notes-case__step">
                 <h3>📈 정량적 성과</h3>
                 <ul>
-                  <li>
-                    <strong>사거래 포착 및 관리 효율 21배 증대</strong>
-                    <span class="notes-case__result-line">기존 월 2건에 불과했던 사거래 식별 건수를 월 42건으로 확대하여 관리 가시성을 대폭 확보함.</span>
-                  </li>
-                  <li>
-                    <strong>월 평균 약 630만 원의 추가 매출 기여</strong>
-                    <span class="notes-case__result-line">이탈될 뻔한 거래를 플랫폼 내 결제로 유도하여 실질적인 수익성 개선에 기여함.</span>
-                  </li>
+                  <li><strong>고관여 수선군 결제 CVR 5% 상승</strong><span class="notes-case__result-line">가죽 복원, 염색 등 고관여 주문의 전환율 개선.</span></li>
+                  <li><strong>최고가 견적 선택 비중 증가 (12% → 38%)</strong><span class="notes-case__result-line">견적 금액에 대한 이해 및 신뢰에 따른 최고가 견적 선택이 약 3배 증가.</span></li>
+                  <li><strong>AOV 4% 상승</strong><span class="notes-case__result-line">가치 중심의 결제 증가로 플랫폼 전체 수익성 향상.</span></li>
+                  <li><strong>수선 퀄리티 관련 VOC 비중 대폭 개선 (72% → 50%)</strong><span class="notes-case__result-line">작업 범위 사전 합의를 통해 퀄리티 불만족 관련 분쟁 비중 22%p 하락.</span></li>
                 </ul>
               </div>
-
               <div class="notes-case__step">
-                <h3>🌟 정성적 성과</h3>
+                <h3>🌟 정성적 가치</h3>
                 <ul>
-                  <li>
-                    <strong>[고객 관점] 안전한 거래 환경 조성</strong>
-                    <span class="notes-case__result-line">보호 체계 강화: 플랫폼 내 결제 유도를 통해 사후 분쟁 시 고객이 보호받을 수 있는 안전장치 마련.</span>
-                    <span class="notes-case__result-line">경험 최적화: 무분별한 제약 대신 ‘필요한 시점’에만 안내를 제공하여 상담의 흐름과 서비스 신뢰도를 동시에 유지.</span>
-                  </li>
-                  <li>
-                    <strong>[사업 관점] 데이터 기반의 운영 구조 확립</strong>
-                    <span class="notes-case__result-line">리스크 가시화: 블랙박스 영역이었던 사거래를 정량적으로 측정하고 관리할 수 있는 시스템 구조 구축.</span>
-                    <span class="notes-case__result-line">선순환 구조: 결제 이탈 방지를 통해 플랫폼 매출을 방어하고 서비스 지속 가능성 확보.</span>
-                  </li>
+                  <li><strong>가치 중심 소비 정착</strong><span class="notes-case__result-line">단순 저가 비교가 아닌, '적합한 공법'을 선택하는 신뢰 기반 생태계 조성.</span></li>
+                  <li><strong>파트너 전문성 인정</strong><span class="notes-case__result-line">드로잉과 사례 공유를 통해 숙련된 파트너가 정당한 가치를 인정받는 환경 마련.</span></li>
                 </ul>
               </div>
             </div>
           </section>
 
-          <section class="notes-case__panel" id="panel-consider" role="region" aria-labelledby="tab-consider">
+                    <section class="notes-case__panel" id="panel-consider" role="region" aria-labelledby="tab-consider">
             <h2 class="notes-case__title">고려 사항</h2>
             <div class="notes-case__body">
-              <h3><strong>‘차단’이 아닌 ‘관리’ 중심의 리스크 헷지 전략</strong></h3>
-              <p>플랫폼의 특성상 어뷰징과 사거래는 필연적으로 발생할 수밖에 없는 과제입니다. 프로젝트 초기에는 직관적인 ‘차단’ 중심의 접근을 고려했으나, 이를 실제 설계에 적용할 경우 모든 사용자 간의 접촉을 의심하고 제한하게 되어 서비스 본연의 가치를 훼손할 위험이 있었습니다.</p>
-              <p>특히 수선 서비스처럼 견적과 작업 범위가 유동적인 고관여 서비스에서는 전화 상담을 통한 세부 조율이 필수적이며 자연스러운 과정입니다. 이러한 맥락에서 사거래 방지를 목적으로 정상적인 상담 경험까지 일률적으로 제한하는 것은, 대다수 선량한 사용자에게 불편을 초래하고 플랫폼에 대한 신뢰를 떨어뜨리는 결과를 낳을 수 있다고 판단했습니다.</p>
-              <p>따라서 본 프로젝트에서는 모든 접촉을 차단하기보다, 정상적인 사용자 경험은 보존하되 리스크 발생 지점을 선별적으로 관리하는 방향을 설정했습니다. 구체적으로는 사거래 전환 확률이 급격히 높아지는 ‘전화번호 또는 계좌 정보가 공유되는 시점’에 집중했습니다. 해당 구간에서 사거래 유의 안내를 실시간으로 노출함으로써 고객에게는 플랫폼 정책 준수를 인지시키고, 파트너에게는 해당 상담이 시스템에 의해 관리되고 있다는 넛지(Nudge)를 제공하여 자발적인 행동 변화를 유도했습니다.</p>
-              <p>운영 측면에서는 이러한 이상 징후를 신속히 탐지할 수 있는 체계를 구축하는 동시에, 정책적으로는 금지 행위와 위반 시 페널티를 명확히 정의하여 운영의 근거와 일관성을 보완했습니다. 이는 막연한 제한이 아닌 명확한 기준에 근거한 예방 조치를 통해 플랫폼 내 신뢰를 공고히 하기 위함입니다.</p>
-              <p>결론적으로, 완전한 차단이라는 불가능한 목표에 과도한 비용을 투입하기보다는 사용자 경험과 통제 사이의 균형을 맞추는 데 초점을 맞췄습니다. 일부 리스크를 감수하더라도 서비스의 전체적인 활성도를 저해하지 않으면서 사거래 이탈을 유의미하게 줄일 수 있는 구조가 플랫폼의 성장에 보다 지속 가능하고 효율적인 전략이라고 판단했기 때문입니다.</p>
+              <h3><strong>'입력 공수 증가'라는 불편함을 '전문성 보호'라는 가치로 전환</strong></h3>
+              <p>상세 견적 체계는 기존보다 파트너의 입력 항목이 늘어나는 개편이었습니다. 특히 디지털 환경에 익숙하지 않은 <strong>고연령대 파트너사(수선 장인)</strong>의 경우, 이러한 변화가 서비스 이탈이나 오기입으로 이어질 리스크가 컸습니다. 본 프로젝트에서는 이 변화를 'UI적 불편함'이 아닌 <strong>'파트너의 기술력을 보호하고 견적에 힘을 실어주는 장치'</strong>로 정의하고 액션을 진행했습니다.</p>
+              <p><strong>파트너 교육 체계 구축 (Partner School)</strong>: 내부 '파트너 학교' 기능을 신설하여 업데이트 취지와 사용법 교육 자료를 배포했습니다. 텍스트 대신 직관적인 사용 영상을 촬영·공유하여 정보 접근성을 높였습니다.</p>
+              <p><strong>선제적 소통을 통한 프레임 체인징</strong>: 불만 인입이 예상되는 파트너사에 선제적 해피콜을 진행했습니다. 본 개편이 "사장님의 전문 공법을 시각화하여 저가 업체와의 소모적인 경쟁을 방지하고, 사후 클레임으로부터 사장님을 보호하는 장치"임을 강조하여 심리적 거부감을 해소했습니다.</p>
+              <p>결론적으로 시스템 개선과 <strong>'파트너 교육 및 밀착 케어'</strong>라는 운영적 장치를 병행함으로써 파트너의 연착륙을 돕고 플랫폼의 비즈니스 지표를 성공적으로 견인할 수 있었습니다.</p>
             </div>
           </section>
         </div>
