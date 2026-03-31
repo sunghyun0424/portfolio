@@ -2064,16 +2064,16 @@ a.notes-case__folder:focus-visible {
   text-rendering: geometricPrecision;
 }
 
-#panel-situation .notes-case__meta {
+#panel-background .notes-case__meta {
   margin-bottom: 18px;
 }
 
-#panel-situation .notes-case__title {
+#panel-background .notes-case__title {
   margin-bottom: 20px;
 }
 
-/* 「사거래 방지 기획」 아래 선 → 「상황」: 패널 구분선과 동일하게 40px */
-#panel-situation .notes-case__subtitle {
+/* 「사거래 방지 기획」 아래 선 → 「배경」: 패널 구분선과 동일하게 40px */
+#panel-background .notes-case__subtitle {
   margin-top: 0;
   padding-top: 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -2095,6 +2095,10 @@ a.notes-case__folder:focus-visible {
 
 .notes-case__body p:last-child {
   margin-bottom: 0;
+}
+
+.notes-case__result-line {
+  display: block;
 }
 
 .notes-case__body ul {
@@ -2119,6 +2123,23 @@ a.notes-case__folder:focus-visible {
 
 .notes-case__step {
   margin-bottom: 1.25em;
+}
+
+/* 실행 섹션: 단계 사이 간격 약간 조정 */
+.notes-case__panel#panel-action .notes-case__step {
+  margin-bottom: 1.25em;
+}
+
+.notes-case__panel#panel-action .notes-case__step:last-child {
+  margin-bottom: 0;
+}
+
+.notes-case__panel#panel-action .notes-case__step > p {
+  margin: 0 0 0.5em;
+}
+
+.notes-case__panel#panel-action .notes-case__step > ul {
+  margin: 0 0 0.75em;
 }
 
 .notes-case__step:last-child {
@@ -2237,6 +2258,41 @@ a.notes-case__folder:focus-visible {
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--report-accent);
+}
+
+#panel-problem .notes-case__problem-lead {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--report-text);
+}
+
+.notes-case__stack-list--problem .notes-case__problem-row {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--report-text);
+}
+
+.notes-case__stack-list--problem .notes-case__problem-row:first-of-type {
+  margin-top: 4px;
+}
+
+.notes-case__stack-list--problem .notes-case__problem-label {
+  display: inline-block;
+  min-width: 3.25em;
+  margin-right: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: -0.01em;
+  color: var(--report-muted);
+  vertical-align: top;
+}
+
+.notes-case__stack-list--problem .notes-case__problem-label--risk {
+  font-weight: 700;
+  color: var(--report-text);
 }
 
 .notes-case__grid-2 {
