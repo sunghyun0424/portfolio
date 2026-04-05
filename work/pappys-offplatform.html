@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="description" content="명품 수선 플랫폼 패피스 — 사거래 방지 기획 사례" />
   <title>사거래 방지 기획</title>
   <link rel="stylesheet" href="../css/portfolio.css" />
@@ -47,9 +47,9 @@
             <p class="notes-case__section-label">MISO</p>
             <ul class="notes-case__folder-list">
               <li>
-                <a class="notes-case__folder" href="miso.html" aria-label="MISO 미소 프로젝트 — 지역 확장">
+                <a class="notes-case__folder" href="miso-seoul-coverage.html" aria-label="MISO 미소 — 서울 전역 커버리지 확대">
                   <svg class="notes-case__folder-ic" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h5l1.5 2H14v8H2V4z" stroke="currentColor" stroke-width="1.2"/><path d="M2 4h5l1.5 2H2V4z" fill="currentColor" opacity="0.2"/></svg>
-                  지역 확장
+                  서울 전역 커버리지 확대
                 </a>
               </li>
               <li>
@@ -316,50 +316,6 @@
     </div>
   </div>
 
-  <script>
-    (function () {
-      var reader = document.querySelector(".notes-case__reader-scroll");
-      var tabs = document.querySelectorAll(".notes-case__note[data-notes-target]");
-      var panels = document.querySelectorAll(".notes-case__panel");
-
-      function setActive(target) {
-        tabs.forEach(function (t) {
-          var sel = t.getAttribute("data-notes-target") === target;
-          t.classList.toggle("notes-case__note--active", sel);
-          if (sel) t.setAttribute("aria-current", "location");
-          else t.removeAttribute("aria-current");
-        });
-      }
-
-      function scrollToPanel(target) {
-        var el = document.getElementById("panel-" + target);
-        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-
-      function updateActiveFromScroll() {
-        if (!reader || !panels.length) return;
-        var readerRect = reader.getBoundingClientRect();
-        var y = readerRect.top + 28;
-        var current = panels[0].id.replace("panel-", "");
-        for (var i = 0; i < panels.length; i++) {
-          if (panels[i].getBoundingClientRect().top <= y) {
-            current = panels[i].id.replace("panel-", "");
-          }
-        }
-        setActive(current);
-      }
-
-      tabs.forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          var target = btn.getAttribute("data-notes-target");
-          scrollToPanel(target);
-          setActive(target);
-        });
-      });
-
-      reader.addEventListener("scroll", updateActiveFromScroll, { passive: true });
-      updateActiveFromScroll();
-    })();
-  </script>
+  <script src="../js/notes-case.js"></script>
 </body>
 </html>
