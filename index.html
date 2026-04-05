@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="description" content="최성현 · 서비스 운영·기획 포트폴리오" />
+  <meta name="description" content="안녕하세요. 기획을 기회로 만드는 최성현입니다. 서비스 기획 · 운영 포트폴리오" />
   <title>최성현 · Portfolio</title>
   <link rel="stylesheet" href="css/portfolio.css" />
 </head>
@@ -12,8 +12,16 @@
 
   <main class="landing">
     <header class="landing-header">
-      <h1 class="landing-name">최성현</h1>
-      <p class="landing-tag">서비스 운영 · 기획</p>
+      <h1 class="visually-hidden">안녕하세요. 기획을 기회로 만드는 최성현입니다. 서비스 기획 ・ 운영</h1>
+      <img
+        class="landing-hero__art"
+        src="assets/group-11.svg"
+        width="708"
+        height="158"
+        alt=""
+        decoding="async"
+        role="presentation"
+      />
     </header>
 
     <div class="landing-dock">
@@ -59,21 +67,35 @@
     <footer class="landing-foot">
       <button
         type="button"
-        class="landing-mail"
+        class="landing-mail landing-contact-btn"
         data-copy-clipboard="chltjdgus424@gmail.com"
         data-copy-toast="메일 주소가 복사되었어요!"
-        aria-label="이메일 주소 복사"
+        aria-label="chltjdgus424@gmail.com 복사"
       >
-        chltjdgus424@gmail.com
+        <img
+          class="landing-contact-btn__img landing-contact-btn__img--email"
+          src="assets/contact-email.svg"
+          width="491"
+          height="39"
+          alt=""
+          decoding="async"
+        />
       </button>
       <button
         type="button"
-        class="landing-tel"
+        class="landing-tel landing-contact-btn"
         data-copy-clipboard="010-2050-0424"
         data-copy-toast="전화번호가 복사되었어요!"
-        aria-label="전화번호 복사"
+        aria-label="010-2050-0424 복사"
       >
-        010-2050-0424
+        <img
+          class="landing-contact-btn__img landing-contact-btn__img--phone"
+          src="assets/contact-phone.svg"
+          width="307"
+          height="35"
+          alt=""
+          decoding="async"
+        />
       </button>
     </footer>
   </main>
