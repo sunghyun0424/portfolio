@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="명품 수선 플랫폼 패피스 — 사거래 방지 기획 사례" />
-  <title>사거래 방지 기획</title>
+  <meta name="description" content="명품 수선 플랫폼 패피스 — 견적 필터링 기획 사례" />
+  <title>견적 필터링 기획</title>
   <link rel="stylesheet" href="../css/portfolio.css" />
 </head>
 <body class="notes-case-page">
-  <h1 class="visually-hidden">사거래 방지 기획</h1>
+  <h1 class="visually-hidden">견적 필터링 기획</h1>
 
   <div class="notes-case">
-    <div class="notes-case__window" role="application" aria-label="사거래 방지 기획 문서">
-      <!-- macOS Notes: 왼쪽 사이드바 -->
+    <div class="notes-case__window" role="application" aria-label="견적 필터링 기획 문서">
       <aside class="notes-case__sidebar" aria-label="폴더">
         <div class="notes-case__chrome">
           <a class="notes-case__dot notes-case__dot--close" href="pappys.html" title="프로젝트 폴더" aria-label="프로젝트 폴더로 이동"></a>
@@ -24,10 +23,10 @@
             <p class="notes-case__section-label">Fapis</p>
             <ul class="notes-case__folder-list">
               <li>
-                <span class="notes-case__folder notes-case__folder--active" aria-current="page">
+                <a class="notes-case__folder" href="pappys-offplatform.html" aria-label="사거래 방지 기획">
                   <svg class="notes-case__folder-ic" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h5l1.5 2H14v8H2V4z" stroke="currentColor" stroke-width="1.2"/><path d="M2 4h5l1.5 2H2V4z" fill="currentColor" opacity="0.2"/></svg>
                   사거래 방지 기획
-                </span>
+                </a>
               </li>
               <li>
                 <a class="notes-case__folder" href="pappys-estimate-split.html" aria-label="견적가 분리 기획">
@@ -36,10 +35,10 @@
                 </a>
               </li>
               <li>
-                <a class="notes-case__folder" href="pappys-estimate-filter.html" aria-label="견적 필터링 기획">
+                <span class="notes-case__folder notes-case__folder--active" aria-current="page">
                   <svg class="notes-case__folder-ic" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h5l1.5 2H14v8H2V4z" stroke="currentColor" stroke-width="1.2"/><path d="M2 4h5l1.5 2H2V4z" fill="currentColor" opacity="0.2"/></svg>
                   견적 필터링 기획
-                </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -86,7 +85,6 @@
         </div>
       </aside>
 
-      <!-- 노트 목록 -->
       <nav class="notes-case__list" aria-label="섹션 목록">
         <div class="notes-case__list-toolbar" aria-hidden="true">
           <span class="notes-case__tb-btn" title="보기"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.2"/></svg></span>
@@ -133,7 +131,6 @@
         </div>
       </nav>
 
-      <!-- 본문 -->
       <main class="notes-case__reader">
         <div class="notes-case__reader-chrome" aria-hidden="true"></div>
         <div class="notes-case__reader-scroll">
@@ -143,12 +140,11 @@
               <span class="notes-case__meta-sep">·</span>
               <span>서비스 운영/기획</span>
             </p>
-            <h2 class="notes-case__title">사거래 방지 기획</h2>
+            <h2 class="notes-case__title">견적 필터링 기획</h2>
             <h3 class="notes-case__subtitle">배경</h3>
             <div class="notes-case__body">
-              <p>패피스는 고객이 견적을 요청하면 파트너사가 이에 응찰하고, 앱 내 채팅을 통해 세부 상담을 이어가는 구조로 운영됩니다. 수선 서비스는 품목마다 작업 범위와 최종 비용이 달라지는 특성이 있어, 정교한 작업을 위해 유선으로 상세 내용을 조율하는 과정은 고객 경험 측면에서 필수적이고 자연스러운 단계로 자리 잡고 있습니다.</p>
-              <p>하지만 이러한 상담 과정의 자율성을 악용하여, 일부 파트너사가 고객에게 플랫폼 결제가 아닌 개인 계좌 입금을 유도하는 사례가 발생하고 있습니다. 이는 플랫폼의 공식 결제 절차를 거치지 않고 외부에서 거래가 이루어지는 사거래 현상으로 이어지고 있습니다.</p>
-              <p>결과적으로 이러한 행위는 플랫폼의 수익성을 저해할 뿐만 아니라, 서비스가 보장하는 거래의 안전성을 위협하는 주요 리스크 요인이 되고 있습니다. 특히 플랫폼 외부 거래 시 발생할 수 있는 분쟁이나 피해로부터 고객을 보호하기 어렵다는 점에서 대책 마련이 필요한 상황입니다.</p>
+              <p>패피스 결제 데이터를 분석한 결과, 고객이 제안받은 견적이 <strong>4개에서 5개로 늘어나는 시점에 결제 전환율(CVR)이 10%p 이상 급등</strong>하는 ‘임팩트 구간’을 확인했습니다. 5개 이후부터는 전환율 상승 폭이 완만해졌으나, 4개와 5개 사이의 격차는 비즈니스 성패를 가르는 핵심 지표였습니다.</p>
+              <p>따라서 플랫폼의 최우선 과제를 <strong>‘고객당 견적 도달 수 5개 이상 확보’</strong>로 설정하고, 파트너사가 본인의 전문 분야에 맞는 유효 견적을 더 빠르고 많이 발견하여 응찰할 수 있는 환경을 구축하고자 했습니다.</p>
             </div>
           </section>
 
@@ -157,24 +153,19 @@
             <div class="notes-case__body">
               <ul class="notes-case__stack-list notes-case__stack-list--problem">
                 <li>
-                  <span class="notes-case__list-kicker">1. 관리 사각지대</span>
-                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 상담 과정에서 발생하는 외부 거래 비중을 파악할 데이터가 없음.</p>
-                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 정확한 사거래 규모 확인 및 데이터 기반의 대응 전략 수립 불가.</p>
+                  <span class="notes-case__list-kicker">1. 유효 견적 탐색의 병목 현상</span>
+                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 파트너 화면에 전문 분야가 아닌 부적합 견적이 무분별하게 노출됨.</p>
+                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 정작 수행 가능한 견적을 찾는 데 시간을 허비하여, 24시간 제한이나 견적 마감으로 인해 참여 기회를 상실함.</p>
                 </li>
                 <li>
-                  <span class="notes-case__list-kicker">2. 고객 보호 한계</span>
-                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 플랫폼 결제가 아닌 개인 계좌 입금 시 분쟁 발생에 개입하기 어려움.</p>
-                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 피해 발생 시 플랫폼의 중재를 받을 수 없어 서비스 신뢰도 하락.</p>
+                  <span class="notes-case__list-kicker">2. 운영 프로세스의 비유연성</span>
+                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 운영팀이 파트너의 수선 범위를 수동으로 관리하여 실시간 수요 변화에 대응이 불가능함.</p>
+                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 장마철(침수 복원) 등 시즌별 급증하는 특정 수요에 대해 파트너가 노출 설정을 즉각 변경하지 못해 매칭 기회 손실.</p>
                 </li>
                 <li>
-                  <span class="notes-case__list-kicker">3. 수익성 저해</span>
-                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 플랫폼을 통해 상담하고 결제는 외부에서 진행하는 ‘이탈 현상’ 발생.</p>
-                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 정당한 수수료 수취가 누락되어 비즈니스 성장에 악영향.</p>
-                </li>
-                <li>
-                  <span class="notes-case__list-kicker">4. 운영 근거 부재</span>
-                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 사거래 부정 행위에 대한 명확한 제재 규정과 대응 매뉴얼이 부족함.</p>
-                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 사거래가 확인되어도 페널티 부여 등 운영 처리에 일관성 부족.</p>
+                  <span class="notes-case__list-kicker">3. 파트너 간 수익 불균형</span>
+                  <p class="notes-case__problem-row"><span class="notes-case__problem-label">현상</span> 특정 카테고리에만 견적이 몰리고, 일부 파트너는 일감이 부족함에도 블루오션 카테고리를 파악할 근거가 없음.</p>
+                  <p class="notes-case__problem-row"><strong class="notes-case__problem-label notes-case__problem-label--risk">리스크</strong> 플랫폼 내 공급 균형 붕괴 및 파트너 이탈 발생.</p>
                 </li>
               </ul>
             </div>
@@ -185,20 +176,16 @@
             <div class="notes-case__body">
               <ul class="notes-case__stack-list">
                 <li>
-                  <span class="notes-case__list-kicker">1. 선제적 탐지</span>
-                  사거래 징후(연락처·계좌 공유 등)를 실시간으로 포착하여 관리 가능한 데이터 영역으로 편입합니다.
+                  <span class="notes-case__list-kicker">1. 결제 전환 임팩트 구간 진입</span>
+                  주요 카테고리의 ‘견적 5개 이상 도착 비율’을 높여 전체 결제 전환율을 극대화합니다.
                 </li>
                 <li>
-                  <span class="notes-case__list-kicker">2. 사용자 경험 보존</span>
-                  일률적인 차단 대신 리스크 구간만 선별 관리하여, 서비스 본연의 상담 흐름과 편의성을 유지합니다.
+                  <span class="notes-case__list-kicker">2. 운영 자동화 및 효율화</span>
+                  파트너 자율 관리 체계로 전환하여 수동 관리 리소스를 100% 절감합니다.
                 </li>
                 <li>
-                  <span class="notes-case__list-kicker">3. 운영 체계 확립</span>
-                  금지 행위 및 페널티 정책을 명문화하여, 일관성 있고 객관적인 운영 근거를 확보합니다.
-                </li>
-                <li>
-                  <span class="notes-case__list-kicker">4. 지속 가능한 효율</span>
-                  과도한 시스템 비용 투입 없이, 사용자 넛지를 통해 자발적인 결제 이탈 방지 구조를 설계합니다.
+                  <span class="notes-case__list-kicker">3. 데이터 기반 수익 컨설팅</span>
+                  수선 유형별 수요-공급 데이터를 자산화하여 파트너별 맞춤형 성장 가이드를 제공합니다.
                 </li>
               </ul>
             </div>
@@ -208,35 +195,19 @@
             <h2 class="notes-case__title">실행</h2>
             <div class="notes-case__body">
               <div class="notes-case__step">
-                <h3><strong>1. 리스크 선행 지표 정의</strong></h3>
-                <p>사거래 전환 확률이 가장 높은 핵심 트리거를 <strong>‘선행 단서’</strong>로 규정하여 탐지 효율을 높였습니다.</p>
+                <h3><strong>1. 실시간 수선 유형 자율 필터링 도입</strong></h3>
+                <p>파트너가 시장 상황에 능동적으로 대응할 수 있도록 권한을 이양했습니다.</p>
                 <ul>
-                  <li>전화번호 공유: 유선 상담 전환을 통한 외부 결제 유도 징후</li>
-                  <li>계좌번호 공유: 직접 송금 방식의 비공식 거래 징후</li>
+                  <li><strong>셀프 관리 UI:</strong> 파트너가 앱 내에서 본인의 전문 분야에 맞는 유형을 On/Off 할 수 있도록 설정.</li>
+                  <li><strong>매칭 로직 최적화:</strong> 설정된 필터 값을 기반으로 파트너에게 수행 가능성이 높은 견적을 우선하여 <strong>상위 노출</strong>.</li>
                 </ul>
               </div>
               <div class="notes-case__step">
-                <h3><strong>2. 통합 관리 정책 수립</strong></h3>
-                <p>탐지부터 제재까지 일관된 대응이 가능하도록 운영 기준을 명문화했습니다.</p>
+                <h3><strong>2. 데이터 기반 파트너 수익 리포트 발행</strong></h3>
+                <p>단순 기능 제공을 넘어 파트너의 매출 성장을 지원하는 컨설팅 도구로 활용했습니다.</p>
                 <ul>
-                  <li>정책 신설: 사거래 정의, 금지 행위 유형, 위반 단계별 페널티 조항 마련</li>
-                  <li>기준 일원화: 탐지-분류-안내 프로세스를 통합하여 운영 효율 극대화</li>
-                </ul>
-              </div>
-              <div class="notes-case__step">
-                <h3><strong>3. 이상 징후 탐지 및 대응 자동화</strong></h3>
-                <p>실시간 모니터링 시스템을 구축하여 관리 공수를 최소화했습니다.</p>
-                <ul>
-                  <li>자동 알림: 정보 공유 발생 시 내부 채널(Slack) 즉시 전송</li>
-                  <li>자동 분류: 해당 건을 ‘사거래 관리 대상’으로 즉시 지정 및 주문 상태 트래킹</li>
-                </ul>
-              </div>
-              <div class="notes-case__step">
-                <h3><strong>4. 사용자 넛지(Nudge) 및 인지 유도</strong></h3>
-                <p>강제적인 차단 대신 심리적 장벽을 높여 자발적 준수를 유도했습니다.</p>
-                <ul>
-                  <li>실시간 안내: 정보 공유 채팅 스레드 내 ‘사거래 방지 주의’ 메시지 즉시 노출</li>
-                  <li>가치 전달: 플랫폼 내 결제가 제공하는 안전장치(보호 체계)를 강조하여 신뢰 중심의 결제 유도</li>
+                  <li><strong>수요-공급 데이터 분석:</strong> 카테고리별 고객 니즈와 평균 견적 전달 수를 지표화.</li>
+                  <li><strong>맞춤형 전략 제안:</strong> 수익이 정체된 파트너에게 ‘수요 대비 공급이 부족한(블루오션) 필터’ 오픈을 권유하는 피드백 루프 구축.</li>
                 </ul>
               </div>
             </div>
@@ -246,55 +217,17 @@
             <h2 class="notes-case__title">결과</h2>
             <div class="notes-case__body">
               <div class="notes-case__step">
-                <div class="notes-case__kpi-row" role="group" aria-label="핵심 지표">
-                  <img
-                    class="notes-case__kpi-img"
-                    src="../assets/pappys-kpi-0.svg"
-                    width="317"
-                    height="317"
-                    alt="Impact 01: 월 사거래 확인 및 관리 건수, 기존 2건에서 42건으로 증가"
-                    decoding="async"
-                    loading="lazy"
-                  />
-                  <img
-                    class="notes-case__kpi-img"
-                    src="../assets/pappys-kpi-1.svg"
-                    width="317"
-                    height="317"
-                    alt="Impact 02: 월 매출 기여, 당시 CVR 및 객단가 기준"
-                    decoding="async"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-
-              <div class="notes-case__step">
                 <h3>📈 정량적 성과</h3>
                 <ul>
-                  <li>
-                    <strong>사거래 포착 및 관리 효율 21배 증대</strong>
-                    <span class="notes-case__result-line">기존 월 2건에 불과했던 사거래 식별 건수를 월 42건으로 확대하여 관리 가시성을 대폭 확보함.</span>
-                  </li>
-                  <li>
-                    <strong>월 평균 약 630만 원의 추가 매출 기여</strong>
-                    <span class="notes-case__result-line">이탈될 뻔한 거래를 플랫폼 내 결제로 유도하여 실질적인 수익성 개선에 기여함.</span>
-                  </li>
+                  <li><strong>견적 도달률 주 평균 6.26%p 상승</strong><span class="notes-case__result-line">가방 품목 등 핵심 카테고리에서 ‘견적 5개 이상 도착 비율’이 유의미하게 증가하여 전환율 임팩트 구간 진입 가속화.</span></li>
+                  <li><strong>운영 공수 100% 절감</strong><span class="notes-case__result-line">운영팀에서 전담하던 파트너 정보 관리 업무를 완전 자동화하여 전략 기획 업무 집중도 향상.</span></li>
                 </ul>
               </div>
-
               <div class="notes-case__step">
-                <h3>🌟 정성적 성과</h3>
+                <h3>🌟 정성적 가치</h3>
                 <ul>
-                  <li>
-                    <strong>[고객 관점] 안전한 거래 환경 조성</strong>
-                    <span class="notes-case__result-line">보호 체계 강화: 플랫폼 내 결제 유도를 통해 사후 분쟁 시 고객이 보호받을 수 있는 안전장치 마련.</span>
-                    <span class="notes-case__result-line">경험 최적화: 무분별한 제약 대신 ‘필요한 시점’에만 안내를 제공하여 상담의 흐름과 서비스 신뢰도를 동시에 유지.</span>
-                  </li>
-                  <li>
-                    <strong>[사업 관점] 데이터 기반의 운영 구조 확립</strong>
-                    <span class="notes-case__result-line">리스크 가시화: 블랙박스 영역이었던 사거래를 정량적으로 측정하고 관리할 수 있는 시스템 구조 구축.</span>
-                    <span class="notes-case__result-line">선순환 구조: 결제 이탈 방지를 통해 플랫폼 매출을 방어하고 서비스 지속 가능성 확보.</span>
-                  </li>
+                  <li><strong>파트너 수익 파트너십 강화</strong><span class="notes-case__result-line">데이터를 기반으로 미수행 파트너에게 새로운 수익 기회를 창출해 줌으로써 플랫폼과 파트너 간의 상생 구조 확립.</span></li>
+                  <li><strong>건강한 공급 생태계 조성</strong><span class="notes-case__result-line">특정 품목 쏠림 현상을 완화하고 전체 수선 카테고리의 공급 균형을 최적화함.</span></li>
                 </ul>
               </div>
             </div>
@@ -303,12 +236,11 @@
           <section class="notes-case__panel" id="panel-consider" role="region" aria-labelledby="tab-consider">
             <h2 class="notes-case__title">고려 사항</h2>
             <div class="notes-case__body">
-              <h3><strong>‘차단’이 아닌 ‘관리’ 중심의 리스크 헷지 전략</strong></h3>
-              <p>플랫폼의 특성상 어뷰징과 사거래는 필연적으로 발생할 수밖에 없는 과제입니다. 프로젝트 초기에는 직관적인 ‘차단’ 중심의 접근을 고려했으나, 이를 실제 설계에 적용할 경우 모든 사용자 간의 접촉을 의심하고 제한하게 되어 서비스 본연의 가치를 훼손할 위험이 있었습니다.</p>
-              <p>특히 수선 서비스처럼 견적과 작업 범위가 유동적인 고관여 서비스에서는 전화 상담을 통한 세부 조율이 필수적이며 자연스러운 과정입니다. 이러한 맥락에서 사거래 방지를 목적으로 정상적인 상담 경험까지 일률적으로 제한하는 것은, 대다수 선량한 사용자에게 불편을 초래하고 플랫폼에 대한 신뢰를 떨어뜨리는 결과를 낳을 수 있다고 판단했습니다.</p>
-              <p>따라서 본 프로젝트에서는 모든 접촉을 차단하기보다, 정상적인 사용자 경험은 보존하되 리스크 발생 지점을 선별적으로 관리하는 방향을 설정했습니다. 구체적으로는 사거래 전환 확률이 급격히 높아지는 ‘전화번호 또는 계좌 정보가 공유되는 시점’에 집중했습니다. 해당 구간에서 사거래 유의 안내를 실시간으로 노출함으로써 고객에게는 플랫폼 정책 준수를 인지시키고, 파트너에게는 해당 상담이 시스템에 의해 관리되고 있다는 넛지(Nudge)를 제공하여 자발적인 행동 변화를 유도했습니다.</p>
-              <p>운영 측면에서는 이러한 이상 징후를 신속히 탐지할 수 있는 체계를 구축하는 동시에, 정책적으로는 금지 행위와 위반 시 페널티를 명확히 정의하여 운영의 근거와 일관성을 보완했습니다. 이는 막연한 제한이 아닌 명확한 기준에 근거한 예방 조치를 통해 플랫폼 내 신뢰를 공고히 하기 위함입니다.</p>
-              <p>결론적으로, 완전한 차단이라는 불가능한 목표에 과도한 비용을 투입하기보다는 사용자 경험과 통제 사이의 균형을 맞추는 데 초점을 맞췄습니다. 일부 리스크를 감수하더라도 서비스의 전체적인 활성도를 저해하지 않으면서 사거래 이탈을 유의미하게 줄일 수 있는 구조가 플랫폼의 성장에 보다 지속 가능하고 효율적인 전략이라고 판단했기 때문입니다.</p>
+              <h3><strong>자율권 이양을 통한 매칭 최적화와 데이터 기반의 성장 지원 전략</strong></h3>
+              <p>본 프로젝트는 단순히 운영 업무를 파트너에게 전가하는 것이 아니라, 파트너 스스로가 <strong>‘시장의 실시간 수요에 반응하는 능동적 주체’</strong>가 될 수 있도록 설계하는 데 집중했습니다.</p>
+              <p>기존의 수동 관리 방식은 파트너의 실제 가용 역량을 100% 반영하지 못해 플랫폼 전체의 공급 잠재력을 억제하고 있었습니다. 이에 파트너가 직접 필터를 조절하여 매칭의 정확도를 높이는 시스템을 구축하는 동시에, 파트너가 본인에게 유리한 의사결정을 내릴 수 있도록 <strong>데이터 기반의 가이드라인</strong>을 제공하는 데 주력했습니다.</p>
+              <p>특히 필터 설정 현황과 견적 발행 데이터를 결합한 <strong>월별 리포트</strong>를 통해, 수익이 정체된 파트너들에게 “현재 가죽 염색 분야의 공급이 부족하니 해당 필터를 열어 기회를 선점하라”는 구체적인 블루오션 전략을 제시했습니다. 이는 파트너 개별의 수익 개선을 넘어, 특정 품목에만 견적이 쏠려 고객이 견적을 받지 못하는 ‘공급 불균형’ 문제를 시스템적으로 해결하는 결과를 낳았습니다.</p>
+              <p>결론적으로 단순 기능을 제공하는 단계에서 멈추지 않고, 파트너가 데이터를 통해 본인의 비즈니스를 스스로 최적화할 수 있는 컨설팅 체계를 구축한 것이 본 기획의 핵심입니다. 이를 통해 파트너의 자발적 참여를 이끌어내며 <strong>결제 전환율이 급증하는 ‘견적 5개 도달’ 구간으로의 진입 비중을 안정적으로 확보</strong>할 수 있었습니다.</p>
             </div>
           </section>
         </div>
