@@ -7,6 +7,6 @@
     "preview": "vercel"
   },
   "devDependencies": {
-    "vercel": "^41.4.1"
+    "vercel": "^50.39.0"
   }
 }
